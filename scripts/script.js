@@ -2,6 +2,7 @@ const button1 = document.getElementById("myButton");
 const button2 = document.getElementById("ButExit");
 const div = document.getElementById("myDiv");
 const div2 = document.getElementById("myDiv2");
+const div3 = document.getElementById("anForm");
 const shadow = document.querySelector(".shadow");
 const inputs = document.getElementsByClassName("main__form-input");
 const mainInputName = document.getElementById("mainInputName");
@@ -168,12 +169,20 @@ window.addEventListener("resize", function () {
       div.style.display = "none";
       div.classList.toggle("main__form-active");
       div2.style.display = "flex";
+
+      myDiv2InputName.value = myDivInputName.value;
+      myDiv2InputEmail.value = myDivInputEmail.value;
+      myDiv2InputTel.value = myDivInputTel.value;
     }
   } else {
     if (div2.style.display === "flex") {
       div2.style.display = "none";
       div.classList.toggle("main__form-active");
       div.style.display = "flex";
+
+      myDivInputName.value = myDiv2InputName.value;
+      myDivInputEmail.value = myDiv2InputEmail.value;
+      myDivInputTel.value = myDiv2InputTel.value;
     }
   }
 });
@@ -185,3 +194,36 @@ function validateEnglish(event) {
   var regex = /^[a-zA-Z0-9.@\s]*$/;
   return regex.test(key);
 }
+
+div.addEventListener("submit", function () {
+  event.preventDefault();
+  if (
+    myDivInputName.value.length != 0 &&
+    myDivInputEmail.value.length != 0 &&
+    myDivInputTel.value.length != 0
+  ) {
+    this.submit();
+  }
+});
+
+div2.addEventListener("submit", function () {
+  event.preventDefault();
+  if (
+    myDiv2InputName.value.length != 0 &&
+    myDiv2InputEmail.value.length != 0 &&
+    myDiv2InputTel.value.length != 0
+  ) {
+    this.submit();
+  }
+});
+
+div3.addEventListener("submit", function () {
+  event.preventDefault();
+  if (
+    mainInputName.value.length != 0 &&
+    mainInputEmail.value.length != 0 &&
+    mainInputTel.value.length != 0
+  ) {
+    this.submit();
+  }
+});
