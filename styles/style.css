@@ -26,7 +26,7 @@ body {
       #121c29 90%,
       #323445 100%
     );
-  background-size: max(1771px, 100%) 1180px, 100%;
+  background-size: max(1771px, 100%) 1320px, 100%;
 }
 
 .container {
@@ -119,6 +119,7 @@ body {
   line-height: 20px;
   color: #b4b4b4;
   padding-bottom: 32px;
+  max-width: 496px;
 }
 
 .main__button {
@@ -221,19 +222,21 @@ body {
   font-weight: 500;
   line-height: 28px;
   font-size: 20px;
+  max-width: 270px;
 }
 
 .another-advantages__paragraph {
   font-size: 17px;
   line-height: 20px;
   color: #d6d7d8;
+  max-width: 274px;
 }
 
 .main__header-text {
   font-weight: 700;
   font-size: 56px;
   line-height: 78px;
-  margin-top: 230px;
+  margin-top: 320px;
 }
 
 .main__header-text-blue {
@@ -443,7 +446,7 @@ body {
   font-size: 56px;
   line-height: 78px;
   margin-bottom: 64px;
-  margin-top: 164px;
+  /* margin-top: 164px; */
 }
 .manual__paragraph-blue {
   color: #4f84c9;
@@ -458,7 +461,7 @@ body {
 
 .manual__cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -498,14 +501,46 @@ body {
   background-color: rgb(238, 96, 96);
 }
 
+.manual__card-inner {
+  max-width: 148px;
+  max-height: 148px;
+  border-radius: 50%;
+  border: 2px solid #2c8560;
+}
+
+.manual__card-text {
+  font-size: 17px;
+  max-width: 216px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__advantage-text {
+  max-width: 395px;
+}
+
+.main__info-block {
+  padding-bottom: 164px;
+}
+
+.main__info-block-paragraph {
+  max-width: 312px;
+  font-size: 17px;
+}
+
+.manual__card-img {
+  width: 148px;
+  height: 148px;
+}
+
 @media (max-width: 1135px) {
   .main__advantage-card {
     width: 450px;
   }
-  .main__form-first-part,
+  /* .main__form-first-part,
   .main__form-second-part {
     width: 360px;
-  }
+  } */
   .main__form-active {
     display: flex;
     justify-content: space-between;
@@ -580,6 +615,21 @@ body {
   .main__header-text {
     margin-top: 150px;
   }
+  body {
+    background: url(../images/bg2.png) center 800px / cover no-repeat,
+      linear-gradient(
+        180deg,
+        #012855 0,
+        #2c5685 1600px,
+        #070708 1405px,
+        #121c29 90%,
+        #323445 100%
+      );
+    background-size: max(1771px, 100%) 1180px, 100%;
+  }
+  .main__header-text {
+    margin-top: 250px;
+  }
 }
 
 @media (max-width: 876px) {
@@ -602,16 +652,23 @@ body {
     margin-right: auto;
   }
   body {
-    background: url(../images/bg2.png) center 1100px / cover no-repeat,
+    background: url(../images/bg2.png) center 1300px / cover no-repeat,
       linear-gradient(
         180deg,
         #012855 0,
-        #2c5685 1880px,
+        #2c5685 1950px,
         #070708 1405px,
         #121c29 90%,
         #323445 100%
       );
     background-size: max(1771px, 100%) 1180px, 100%;
+  }
+  .main__info-text3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__header-text {
+    margin-top: 300px;
   }
 }
 
@@ -639,9 +696,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .main__advantage-card:last-child {
+  /* .main__advantage-card:last-child {
     margin-top: 48px;
-  }
+  } */
 
   .main__form-second-part {
     margin-left: auto;
@@ -663,7 +720,7 @@ body {
     background-size: max(1771px, 100%) 1180px, 100%;
   }
   .main__header-text {
-    margin-top: 190px;
+    margin-top: 260px;
   }
 }
 
@@ -686,9 +743,12 @@ body {
     width: 100%;
   }
   .main__header-text {
-    margin-top: 160px;
+    margin-top: 260px;
   }
 
+  .main__advantage-card:last-child {
+    margin-top: 48px;
+  }
   .main__advantages {
     padding: 32px;
   }
@@ -720,14 +780,14 @@ body {
     margin-top: 0;
   }
   .main__header-text {
-    margin-top: 80px;
+    margin-top: 260px;
   }
   body {
-    background: url(../images/bg2.png) center 1800px / cover no-repeat,
+    background: url(../images/bg2.png) center 1900px / cover no-repeat,
       linear-gradient(
         180deg,
         #012855 0,
-        #2c5685 2450px,
+        #2c5685 2650px,
         #070708 1405px,
         #121c29 90%,
         #323445 100%
@@ -739,6 +799,7 @@ body {
 @media (max-width: 600px) {
   .main__info-block {
     margin-top: 32px;
+    padding-bottom: 32px;
   }
   .main__info-block-card {
     max-width: 100%;
@@ -787,9 +848,23 @@ body {
     margin-top: 30px;
   }
   .main__header-text {
-    margin-top: 230px;
+    margin-top: 400px;
   }
 }
+
+@media (max-width: 559.2px) {
+  .main__advantage-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__header-text {
+    margin-top: 250px;
+  }
+}
+
+/* @media (max-width: 541px) {
+
+} */
 
 @media (max-width: 520px) {
   .main__image {

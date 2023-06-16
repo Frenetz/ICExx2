@@ -19,6 +19,8 @@ const myDiv2InputName = document.getElementById("myDiv2InputName");
 const myDiv2InputEmail = document.getElementById("email-input");
 const myDiv2InputTel = document.getElementById("phone-input");
 
+const telMask = document.querySelectorAll("phone_mask");
+
 div.style.display = "none";
 div2.style.display = "none";
 
@@ -187,7 +189,10 @@ window.addEventListener("resize", function () {
   }
 });
 
-$(".phone_mask").mask("+7(999)999-99-99");
+//$(".phone_mask").mask("+7(999)999-99-99");
+// const phoneMask = new IMask(telMask, {
+//   mask: "+{7}(000)000-00-00",
+// });
 
 function validateEnglish(event) {
   var key = event.key;
@@ -226,4 +231,16 @@ div3.addEventListener("submit", function () {
   ) {
     this.submit();
   }
+});
+
+var phoneMask = IMask(document.getElementById("phone-input"), {
+  mask: "+{7}(000)000-00-00",
+});
+
+var phoneMask2 = IMask(document.getElementById("myDivInputTel"), {
+  mask: "+{7}(000)000-00-00",
+});
+
+var phoneMask3 = IMask(document.getElementById("mainInputTel"), {
+  mask: "+{7}(000)000-00-00",
 });

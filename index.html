@@ -54,11 +54,11 @@
               <p class="main__info-text1">Прибыльные инвестиции</p>
               <h1 class="main__main-header">Как заработать более 500%</h1>
               <p class="main__info-text2">Инвестируя в Pro-управляющего?</p>
-              <p class="main__info-text3">
+              <div class="main__info-text3">
                 Автоматическая система торгует импульсные движения. Чаще всего
                 их можно наблюдать во время сильных трендов, за счёт которых
                 происходит движение цены.
-              </p>
+              </div>
               <button id="myButton" class="main__button">
                 Связаться со мной
               </button>
@@ -70,7 +70,7 @@
             />
           </div>
           <div class="main__advantages">
-            <div class="main__advantage-card">
+            <!-- <div class="main__advantage-card">
               <img
                 src="images/card1.svg"
                 alt="card-logo"
@@ -79,6 +79,16 @@
               <p class="main__advantage-text">
                 Нет ограничений по минимальному депозиту.
               </p>
+            </div> -->
+            <div class="main__advantage-card">
+              <img
+                src="images/card1.svg"
+                alt="card-logo"
+                class="main__advantage-logo"
+              />
+              <div class="main__advantage-text">
+                Нет ограничений по минимальному депозиту.
+              </div>
             </div>
             <div class="main__advantage-card">
               <img
@@ -86,10 +96,10 @@
                 alt="card-logo"
                 class="main__advantage-logo"
               />
-              <p class="main__advantage-text">
+              <div class="main__advantage-text">
                 Контроль рисков как со стороны управляющего, так и со стороны
                 брокера
-              </p>
+              </div>
             </div>
             <div class="main__advantage-card">
               <img
@@ -97,9 +107,9 @@
                 alt="card-logo"
                 class="main__advantage-logo"
               />
-              <p class="main__advantage-text">
+              <div class="main__advantage-text">
                 Высокая доходность при контролируемом и ограниченном риске.
-              </p>
+              </div>
             </div>
             <div class="main__advantage-card">
               <img
@@ -107,17 +117,17 @@
                 alt="card-logo"
                 class="main__advantage-logo"
               />
-              <p class="main__advantage-text">
+              <div class="main__advantage-text">
                 Брокер без конфликта интересов и заинтересован в прибыльности
                 своих клиентов
-              </p>
+              </div>
             </div>
           </div>
           <div class="another-advantages">
             <div class="another-advantages__card">
               <img src="images/an-card1.svg" alt="card" />
               <h3 class="another-advantages__header">Ограничение убытка</h3>
-              <p class="another-advantages__parargaph">
+              <p class="another-advantages__paragraph">
                 Автоматическая установка торговли при превышении недельного
                 убытка
               </p>
@@ -127,7 +137,7 @@
               <h3 class="another-advantages__header">
                 Доля прибыли инвестора 88-92%
               </h3>
-              <p class="another-advantages__parargaph">
+              <p class="another-advantages__paragraph">
                 Доля прибыли инвестора наибольшая по сравнению с другими
                 известными инвестиционными брокерами
               </p>
@@ -135,8 +145,8 @@
             <div class="another-advantages__card">
               <img src="images/an-card3.svg" alt="card" />
               <h3 class="another-advantages__header">Реальность торговли</h3>
-              <p class="another-advantages__parargaph">
-                Открытый пароль инвест ора для просмотра вделок в online-режиме
+              <p class="another-advantages__paragraph">
+                Открытый пароль инвестора для просмотра вделок в online-режиме
               </p>
             </div>
           </div>
@@ -232,7 +242,7 @@
               успешному инвестированию
             </h2>
             <div class="manual__cards">
-              <div class="manual__card">
+              <!-- <div class="manual__card">
                 <img
                   src="images/Rect1.svg"
                   alt="card"
@@ -242,6 +252,26 @@
                   <span class="manual__paragraph-blue">Оставляете заявку</span>
                   на консультацию или звоните по телефону
                 </p>
+              </div> -->
+              <!-- <div class="manual__card">
+                <div class="manual__card-inner">
+                  <img src="images/krug2.svg" alt="inner" />
+                </div>
+                <p>
+                  <span class="manual__paragraph-blue">Оставляете заявку</span>
+                  на консультацию или звоните по телефону
+                </p>
+              </div> -->
+              <div class="manual__card">
+                <img
+                  src="images/Rect1.svg"
+                  alt="card"
+                  class="manual__card-img"
+                />
+                <div class="manual__card-text">
+                  <span class="manual__paragraph-blue">Оставляете заявку</span>
+                  на консультацию или звоните по телефону
+                </div>
               </div>
               <div class="manual__card">
                 <img
@@ -249,10 +279,10 @@
                   alt="card"
                   class="manual__card-img"
                 />
-                <p>
+                <div class="manual__card-text">
                   Получаете бесплатную консультацию от специалиста. Ответим на
                   все вопросы в течении 5 минут
-                </p>
+                </div>
               </div>
               <div class="manual__card">
                 <img
@@ -260,7 +290,9 @@
                   alt="card"
                   class="manual__card-img"
                 />
-                <p>Регистрируетесь в компании ICE XX</p>
+                <div class="manual__card-text">
+                  Регистрируетесь в компании ICE XX
+                </div>
               </div>
               <div class="manual__card">
                 <img
@@ -268,7 +300,9 @@
                   alt="card"
                   class="manual__card-img"
                 />
-                <p>Пополняете счёт удобным для Вас способом</p>
+                <div class="manual__card-text">
+                  Пополняете счёт удобным для Вас способом
+                </div>
               </div>
               <div class="manual__card">
                 <img
@@ -276,7 +310,7 @@
                   alt="card"
                   class="manual__card-img"
                 />
-                <p>Выспешно инвестируете!</p>
+                <div class="manual__card-text">Выспешно инвестируете!</div>
               </div>
             </div>
           </div>
@@ -422,6 +456,6 @@
     src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
     type="text/javascript"
   ></script>
-
+  <script src="https://unpkg.com/imask"></script>
   <script src="scripts/script.js"></script>
 </html>
